@@ -1,15 +1,14 @@
 /**
  * Verified personal and professional identity data for Raj Jadav.
- * Defer detailed biographical additions until confirmed in future phases.
  */
 export const personalData = {
   name: "Raj Jadav",
-  title: "Aspiring AI Engineer",
+  title: "AI Engineer",
   tagline: "Building intelligent systems. Turning ideas into practical AI applications.",
-  bio: "Aspiring AI Engineer dedicated to building practical, intelligent systems and machine learning applications. Focused on engineering rigorous solutions, participating in hackathons, and developing production-ready software.",
+  bio: "AI Engineer dedicated to building practical, intelligent systems and machine learning applications. Focused on engineering rigorous solutions, participating in hackathons, and developing production-ready software.",
   status: "Available for AI/ML Internships & Roles",
   location: "India",
-  email: "raj.jadav@example.com",
+  email: "rajjadav0906@gmail.com",
   portfolioPurpose: [
     "AI/ML internships and job applications",
     "Professional personal branding",

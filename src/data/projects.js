@@ -2,7 +2,7 @@
  * Centralized projects repository for Raj Jadav.
  * Contains verified project identifiers, routes, and baseline metadata.
  */
-export const projectsData = [
+export const featuredProjectsData = [
   {
     id: "signova-ai",
     slug: "signova-ai",
@@ -23,14 +23,32 @@ export const projectsData = [
     tags: ["NLP", "Speech-to-Text", "Content Analysis", "Machine Learning"],
     featured: true,
   },
-  {
-    id: "credit-card-analysis",
-    slug: "credit-card-analysis",
-    route: "/projects/credit-card-analysis",
-    title: "Credit Card Customer Analysis",
-    category: "Data Science & Predictive Modeling",
-    shortDescription: "Exploratory data analysis and predictive segmentation for credit card customer patterns.",
-    tags: ["Data Science", "Machine Learning", "Customer Analytics", "Python"],
-    featured: true,
-  }
 ]
+
+export const additionalProjectsData = [
+  {
+    id: "ai-attendance-system",
+    title: "AI Attendance System",
+    category: "Computer Vision",
+    description: "An AI-based attendance application using computer vision.",
+    tags: ["Computer Vision", "Python", "Machine Learning"],
+  },
+  {
+    id: "stock-analysis-ml",
+    title: "Stock Analysis ML",
+    category: "Predictive Analytics",
+    description: "A machine-learning project focused on stock data analysis.",
+    tags: ["Machine Learning", "Data Analysis", "Python"],
+  },
+  {
+    id: "voice-based-rag-system",
+    title: "Voice-Based RAG System",
+    category: "Speech & Retrieval AI",
+    description: "A voice-enabled Retrieval-Augmented Generation system that converts speech into text, retrieves relevant information and generates contextual answers.",
+    tags: ["Speech-to-Text", "RAG", "NLP", "Python"],
+  },
+]
+
+// Backwards-compatible export representing featured projects
+export const projectsData = featuredProjectsData
+

@@ -1,0 +1,6 @@
+export { ProjectCaseStudy } from './ProjectCaseStudy'
+export { ProjectArchitecture } from './ProjectArchitecture'
+export { ProjectChallenges } from './ProjectChallenges'
+export { ProjectTechStack } from './ProjectTechStack'
+export { ProjectResults } from './ProjectResults'
+export { ProjectNavigation } from './ProjectNavigation'

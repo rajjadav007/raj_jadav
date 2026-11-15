@@ -4,56 +4,232 @@
 
 @layer base {
   :root {
-    --background: 40 20% 98%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 172 38% 42%;
-    --accent-foreground: 0 0% 98%;
+    /* -------------------------------------------------------------
+       Swiss Editorial Design System Tokens (Light Mode - Default)
+       All 9 Exact Client Hex Specifications Mapped
+       ------------------------------------------------------------- */
+    --swiss-bg: #F8F7F3;
+    --swiss-text-primary: #111111;
+    --swiss-text-secondary: #686868;
+    --swiss-text-muted: #898989;
+    --swiss-accent: #0D9488;
+    --swiss-accent-dark: #0F766E;
+    --swiss-surface-primary: #FFFFFF;
+    --swiss-surface-secondary: #F2F0EA;
+    --swiss-border: #E5E2DA;
+
+    /* HSL triplets for Tailwind CSS <alpha-value> opacity compatibility */
+    --background: 48 26.3% 96.3%;          /* #F8F7F3 Warm Off-White */
+    --foreground: 0 0% 6.7%;              /* #111111 Primary Text */
+    --card: 0 0% 100%;                    /* #FFFFFF Primary Surface */
+    --card-foreground: 0 0% 6.7%;         /* #111111 Primary Text */
+    --popover: 0 0% 100%;                 /* #FFFFFF */
+    --popover-foreground: 0 0% 6.7%;      /* #111111 */
+    --primary: 0 0% 6.7%;                 /* #111111 Swiss Strong Black */
+    --primary-foreground: 0 0% 100%;      /* #FFFFFF */
+    --secondary: 45 23.5% 93.3%;          /* #F2F0EA Secondary Surface */
+    --secondary-foreground: 0 0% 6.7%;    /* #111111 */
+    --muted: 45 23.5% 93.3%;              /* #F2F0EA Secondary Surface */
+    --muted-foreground: 0 0% 53.7%;       /* #898989 Muted Text */
+    --accent: 175 83.9% 31.6%;            /* #0D9488 Primary Accent */
+    --accent-foreground: 0 0% 100%;       /* #FFFFFF */
+    --accent-dark: 175 77.4% 26.1%;       /* #0F766E Dark Accent */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 172 38% 42%;
-    --radius: 0.5rem;
+    --border: 44 17.5% 87.6%;             /* #E5E2DA Architectural Border */
+    --input: 44 17.5% 87.6%;              /* #E5E2DA */
+    --ring: 175 83.9% 31.6%;              /* #0D9488 Accent Ring */
+    --radius: 0.375rem;
+
+    /* Dedicated Swiss Typography & Surface Tokens */
+    --text-primary: 0 0% 6.7%;            /* #111111 */
+    --text-secondary: 0 0% 40.8%;         /* #686868 */
+    --text-muted: 0 0% 53.7%;             /* #898989 */
+    --surface-primary: 0 0% 100%;         /* #FFFFFF */
+    --surface-secondary: 45 23.5% 93.3%;  /* #F2F0EA */
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 5%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 5%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 172 38% 45%;
-    --accent-foreground: 0 0% 98%;
+    /* -------------------------------------------------------------
+       Swiss Editorial Design System Tokens (Dark Mode - Optional)
+       Harmonized Warm Obsidian Palette
+       ------------------------------------------------------------- */
+    --swiss-bg: #121211;
+    --swiss-text-primary: #F8F7F3;
+    --swiss-text-secondary: #A09E96;
+    --swiss-text-muted: #73716A;
+    --swiss-accent: #14B8A6;
+    --swiss-accent-dark: #0D9488;
+    --swiss-surface-primary: #191918;
+    --swiss-surface-secondary: #222220;
+    --swiss-border: #2D2C28;
+
+    /* HSL triplets for Dark Mode */
+    --background: 45 4% 7%;               /* #121211 Warm Obsidian */
+    --foreground: 48 20% 95%;             /* #F8F7F3 Warm Off-White */
+    --card: 45 4% 10%;                    /* #191918 Dark Elevated Surface */
+    --card-foreground: 48 20% 95%;        /* #F8F7F3 */
+    --popover: 45 4% 10%;                 /* #191918 */
+    --popover-foreground: 48 20% 95%;     /* #F8F7F3 */
+    --primary: 48 20% 95%;                /* #F8F7F3 Warm Off-White */
+    --primary-foreground: 45 4% 7%;       /* #121211 */
+    --secondary: 45 4% 13%;               /* #222220 Dark Recessed Surface */
+    --secondary-foreground: 48 20% 95%;   /* #F8F7F3 */
+    --muted: 45 4% 13%;                   /* #222220 */
+    --muted-foreground: 45 4% 45%;        /* #73716A Dark Muted Text */
+    --accent: 173 80% 40%;                /* #14B8A6 Vibrant Teal Accent */
+    --accent-foreground: 0 0% 100%;       /* #FFFFFF */
+    --accent-dark: 175 83.9% 31.6%;       /* #0D9488 */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 172 38% 45%;
+    --border: 45 6% 17%;                  /* #2D2C28 Dark Border */
+    --input: 45 6% 17%;                   /* #2D2C28 */
+    --ring: 173 80% 40%;                  /* #14B8A6 */
+
+    /* Dedicated Swiss Typography & Surface Tokens */
+    --text-primary: 48 20% 95%;           /* #F8F7F3 */
+    --text-secondary: 45 5% 61%;          /* #A09E96 */
+    --text-muted: 45 4% 45%;              /* #73716A */
+    --surface-primary: 45 4% 10%;         /* #191918 */
+    --surface-secondary: 45 4% 13%;       /* #222220 */
   }
 
   * {
     @apply border-border;
   }
 
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings: "rlig" 1, "calt" 1, "cv02" 1, "cv03" 1, "cv04" 1;
+  }
+}
+
+@layer utilities {
+  /* -------------------------------------------------------------
+     Subtle CSS Square Grid Texture
+     ------------------------------------------------------------- */
+  .bg-grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, hsl(var(--border) / 0.55) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.55) 1px, transparent 1px);
+  }
+
+  .bg-grid-sm {
+    background-size: 16px 16px;
+    background-image: 
+      linear-gradient(to right, hsl(var(--border) / 0.45) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.45) 1px, transparent 1px);
+  }
+
+  .bg-grid-lg {
+    background-size: 48px 48px;
+    background-image: 
+      linear-gradient(to right, hsl(var(--border) / 0.6) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.6) 1px, transparent 1px);
+  }
+
+  .bg-dots-pattern {
+    background-size: 24px 24px;
+    background-image: radial-gradient(hsl(var(--border) / 0.8) 1px, transparent 1px);
+  }
+
+  /* Radial fade masks for breathing room */
+  .mask-radial-subtle {
+    mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+  }
+
+  .mask-linear-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+  }
+
+  /* -------------------------------------------------------------
+     Selective Liquid Glass Effects
+     ------------------------------------------------------------- */
+  .glass-surface {
+    background-color: hsl(var(--card) / 0.72);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid hsl(var(--border) / 0.7);
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.4),
+      0 4px 16px -2px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .glass-surface {
+    background-color: hsl(var(--card) / 0.65);
+    border-color: hsl(var(--border) / 0.5);
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+      0 8px 24px -4px rgba(0, 0, 0, 0.35);
+  }
+
+  .glass-surface-elevated {
+    background-color: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid hsl(var(--border) / 0.8);
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.6),
+      0 12px 32px -4px rgba(0, 0, 0, 0.08);
+  }
+
+  .dark .glass-surface-elevated {
+    background-color: hsl(var(--card) / 0.75);
+    border-color: hsl(var(--border) / 0.6);
+    box-shadow: 
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.12),
+      0 16px 40px -6px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-surface-subtle {
+    background-color: hsl(var(--card) / 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .dark .glass-surface-subtle {
+    background-color: hsl(var(--card) / 0.4);
+    border-color: hsl(var(--border) / 0.3);
+  }
+
+  .glass-surface-accent {
+    background-color: hsl(var(--accent) / 0.08);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid hsl(var(--accent) / 0.25);
+    box-shadow: 
+      inset 0 1px 0 0 hsl(var(--accent) / 0.2),
+      0 4px 20px -2px hsl(var(--accent) / 0.1);
+  }
+
+  /* Specular Highlight Top Edge */
+  .specular-highlight {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .specular-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    pointer-events: none;
+  }
+
+  .dark .specular-highlight::before {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
   }
 }
